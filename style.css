@@ -39,7 +39,7 @@ h1 {
   padding: 20px 0 10px;
   margin: 20px;
   border-radius: 25px;
-  box-shadow: 0 2px 10px rgba(247, 8, 132, 0.50);
+  box-shadow: 0 2px 10px rgba(247, 8, 132, 0.5);
   /*border: solid 1px green;*/
 }
 .question-block h4 {
@@ -57,7 +57,7 @@ h1 {
   align-items: center;
 }
 .question-choices > div {
-  background-position : center;
+  background-position: center;
   border: solid 1px lightgrey;
   width: 250px;
   height: 250px;
@@ -78,7 +78,7 @@ h1 {
   padding: 20px;
   margin: 20px 0 70px;
   border-radius: 25px;
-  box-shadow: 0 2px 10px rgba(247, 8, 132, 0.50);
+  box-shadow: 0 2px 10px rgba(247, 8, 132, 0.5);
   /*align-content: center;*/
 }
 .resultats h2 {
@@ -109,68 +109,67 @@ form button {
   transition: background-color 0.5s ease-in-out;
 }
 form button:hover {
-    background-color: rgba(105, 7, 247, 0.52);
+  background-color: rgba(105, 7, 247, 0.52);
 }
 
 .echec {
-    animation: echec 0.3s ease-in-out;
+  animation: echec 0.3s ease-in-out;
 }
 @keyframes echec {
-    0% {
-        transform: translateX(0px);
-    }
-    33% {
-        transform: translateX(5px);
-    }
-    66% {
-        transform: translateX(-5px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(5px);
+  }
+  66% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
-
 @media (max-width: 799px) {
-    .container-global {
-        width: 90%;
-      }
-    .question-block h4 {
-      font-size: 1rem;
-    }
-    .question-block {
-        width: 90%;
-    }
-    .question-choices > div {
-        width: 100px;
-        height: 100px;
-        background-size: 150px;
-      }
-    .question-choices {
-      /*border: solid 2px red;*/
-      padding: 0 0.8rem 0 0.8rem;
-      grid-gap: 10px;
-    }
-    .choices-check {
-        top: 70px;
-        right: 0px;
-        font-size: 0.8rem;
-    }
-    .question-block input[type="radio"] {
-        transform: scale(1);
-        margin: 5px;
-    }
-    .resultats {
-        padding: 15px;
-        margin: 25px 0 50px;
-        border-radius: 25px;
-    }
-    .resultats h2 {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    form button {
-        padding: 15px;
-        font-size: 1.2rem;
-    }
+  .container-global {
+    width: 90%;
+  }
+  .question-block h4 {
+    font-size: 1rem;
+  }
+  .question-block {
+    width: 90%;
+  }
+  .question-choices > div {
+    width: 100px;
+    height: 100px;
+    background-size: 150px;
+  }
+  .question-choices {
+    /*border: solid 2px red;*/
+    padding: 0 0.8rem 0 0.8rem;
+    grid-gap: 10px;
+  }
+  .choices-check {
+    top: 70px;
+    right: 0px;
+    font-size: 0.8rem;
+  }
+  .question-block input[type="radio"] {
+    transform: scale(1);
+    margin: 5px;
+  }
+  .resultats {
+    padding: 15px;
+    margin: 25px 0 50px;
+    border-radius: 25px;
+  }
+  .resultats h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  form button {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
 }
